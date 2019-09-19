@@ -1,12 +1,12 @@
 import React from "react";
 
-function Sidebar() {
+function Sidebar(props) {
   return (
     <div id="sidebar">
       <img src="theindex.svg" className="logo" alt="the index logo" />
       <section>
         <h4 className="menu-item active">
-          <button>AUTHORS</button>
+          <a href={props.showList()}><button >AUTHORS</button></a>
         </h4>
       </section>
     </div>
